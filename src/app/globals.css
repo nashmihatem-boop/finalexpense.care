@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
+/* Palette matched to healthadvantageplan.com (Quality Score LLC's other site) for a
+   consistent house style across properties — values sampled directly from its computed
+   styles, not eyeballed. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-harbor: #142b56;
+  --color-harbor-mid: #2b6cb5;
+  --color-harbor-deep: #0b1a38;
+  --color-canvas: #ffffff;
+  --color-canvas-alt: #eef4fb;
+  --color-canvas-raised: #ffffff;
+  --color-brass: #f0b429;
+  --color-brass-dark: #d99e1f;
+  --color-sage: #4d8a6a;
+  --color-sage-dark: #3a694f;
+  --color-charcoal: #33425c;
+  --color-mist: #dbe6f2;
+  --color-clay: #b3402a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-harbor: var(--color-harbor);
+  --color-harbor-mid: var(--color-harbor-mid);
+  --color-harbor-deep: var(--color-harbor-deep);
+  --color-canvas: var(--color-canvas);
+  --color-canvas-alt: var(--color-canvas-alt);
+  --color-canvas-raised: var(--color-canvas-raised);
+  --color-brass: var(--color-brass);
+  --color-brass-dark: var(--color-brass-dark);
+  --color-sage: var(--color-sage);
+  --color-sage-dark: var(--color-sage-dark);
+  --color-charcoal: var(--color-charcoal);
+  --color-mist: var(--color-mist);
+  --color-clay: var(--color-clay);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --font-display: var(--font-inter);
+  --font-sans: var(--font-inter);
+
+  --animate-rise: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-canvas);
+  color: var(--color-charcoal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-harbor-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass-dark);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
