@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Graded Benefit Final Expense Insurance Explained",
   description:
     "How the graded step-up payout works in the first couple of years, what health profile typically lands here, and why it's real, valid coverage.",
+  openGraph: { title: "Graded Benefit Final Expense Insurance Explained", description: "How the graded step-up payout works in the first couple of years, what health profile typically lands here, and why it's real, valid coverage." },
+
+  twitter: { title: "Graded Benefit Final Expense Insurance Explained", description: "How the graded step-up payout works in the first couple of years, what health profile typically lands here, and why it's real, valid coverage." },
 };
 
 export default function GradedBenefitPage() {

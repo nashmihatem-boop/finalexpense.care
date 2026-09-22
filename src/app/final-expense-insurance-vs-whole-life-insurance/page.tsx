@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance vs. Whole Life Insurance",
   description:
     "Final expense insurance is actually a type of whole life insurance — a smaller, simplified version built for a specific purpose. Here's how the two compare.",
+  openGraph: { title: "Final Expense Insurance vs. Whole Life Insurance", description: "Final expense insurance is actually a type of whole life insurance — a smaller, simplified version built for a specific purpose. Here's how the two compare." },
+
+  twitter: { title: "Final Expense Insurance vs. Whole Life Insurance", description: "Final expense insurance is actually a type of whole life insurance — a smaller, simplified version built for a specific purpose. Here's how the two compare." },
 };
 
 export default function FinalExpenseVsWholeLifePage() {

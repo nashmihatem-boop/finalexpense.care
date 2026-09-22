@@ -5,6 +5,8 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "You're All Set",
+  openGraph: { title: "You're All Set — FinalExpense.care" },
+  twitter: { title: "You're All Set — FinalExpense.care" },
 };
 
 export default function ThankYouPage() {

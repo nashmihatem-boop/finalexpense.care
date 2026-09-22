@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal-page";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = { title: "Terms of Use" };
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  openGraph: { title: "Terms of Use — FinalExpense.care" },
+  twitter: { title: "Terms of Use — FinalExpense.care" },
+};
 
 export default function TermsPage() {
   return (

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Level vs. Graded vs. Modified Life Insurance",
   description:
     "A side-by-side look at the three ways a final expense death benefit can be structured, plus what happens when none of them fit.",
+  openGraph: { title: "Level vs. Graded vs. Modified Life Insurance", description: "A side-by-side look at the three ways a final expense death benefit can be structured, plus what happens when none of them fit." },
+
+  twitter: { title: "Level vs. Graded vs. Modified Life Insurance", description: "A side-by-side look at the three ways a final expense death benefit can be structured, plus what happens when none of them fit." },
 };
 
 const OUTCOMES = [

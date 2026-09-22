@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Verify an Insurance Company Is Legitimate",
   description:
     "How to check a carrier's and agent's state insurance license, confirm an NPN, and spot payment requests that no legitimate insurance company would ever make.",
+  openGraph: { title: "How to Verify an Insurance Company Is Legitimate", description: "How to check a carrier's and agent's state insurance license, confirm an NPN, and spot payment requests that no legitimate insurance company would ever make." },
+
+  twitter: { title: "How to Verify an Insurance Company Is Legitimate", description: "How to check a carrier's and agent's state insurance license, confirm an NPN, and spot payment requests that no legitimate insurance company would ever make." },
 };
 
 export default function VerifyCompanyIsLegitimatePage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Funeral Cost Guide",
   description:
     "Why funeral costs vary so much, the general categories you're actually paying for, and how to get a real number from local providers before you size coverage.",
+  openGraph: { title: "Funeral Cost Guide", description: "Why funeral costs vary so much, the general categories you're actually paying for, and how to get a real number from local providers before you size coverage." },
+
+  twitter: { title: "Funeral Cost Guide", description: "Why funeral costs vary so much, the general categories you're actually paying for, and how to get a real number from local providers before you size coverage." },
 };
 
 const TOPICS: { href: string; title: string; description: string; image?: string }[] = [

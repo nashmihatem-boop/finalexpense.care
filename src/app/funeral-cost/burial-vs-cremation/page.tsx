@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Burial vs. Cremation: A Balanced Comparison",
   description:
     "How cost, religious and cultural considerations, and environmental factors compare between burial and cremation — and why final expense coverage works the same either way.",
+  openGraph: { title: "Burial vs. Cremation: A Balanced Comparison", description: "How cost, religious and cultural considerations, and environmental factors compare between burial and cremation — and why final expense coverage works the same either way." },
+
+  twitter: { title: "Burial vs. Cremation: A Balanced Comparison", description: "How cost, religious and cultural considerations, and environmental factors compare between burial and cremation — and why final expense coverage works the same either way." },
 };
 
 export default function BurialVsCremationPage() {

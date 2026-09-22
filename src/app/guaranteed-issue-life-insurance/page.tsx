@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Guaranteed Issue Life Insurance Explained",
   description:
     "How guaranteed-issue (guaranteed-acceptance) life insurance actually works, why it carries a waiting period, why it costs more, and who it's really built for.",
+  openGraph: { title: "Guaranteed Issue Life Insurance Explained", description: "How guaranteed-issue (guaranteed-acceptance) life insurance actually works, why it carries a waiting period, why it costs more, and who it's really built for." },
+
+  twitter: { title: "Guaranteed Issue Life Insurance Explained", description: "How guaranteed-issue (guaranteed-acceptance) life insurance actually works, why it carries a waiting period, why it costs more, and who it's really built for." },
 };
 
 export default function GuaranteedIssueLifeInsurancePage() {

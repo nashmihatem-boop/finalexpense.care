@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "The Life Insurance Contestability Period, Explained",
   description:
     "What the standard two-year contestability period means, why it exists, and how it differs from a graded or modified waiting period.",
+  openGraph: { title: "The Life Insurance Contestability Period, Explained", description: "What the standard two-year contestability period means, why it exists, and how it differs from a graded or modified waiting period." },
+
+  twitter: { title: "The Life Insurance Contestability Period, Explained", description: "What the standard two-year contestability period means, why it exists, and how it differs from a graded or modified waiting period." },
 };
 
 export default function ContestabilityPeriodPage() {

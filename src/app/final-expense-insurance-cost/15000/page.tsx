@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$15,000 Final Expense Insurance Cost",
   description:
     "What a $15,000 final expense policy commonly covers, how it compares to $10,000 and $20,000, and what actually drives the price.",
+  openGraph: { title: "$15,000 Final Expense Insurance Cost", description: "What a $15,000 final expense policy commonly covers, how it compares to $10,000 and $20,000, and what actually drives the price." },
+
+  twitter: { title: "$15,000 Final Expense Insurance Cost", description: "What a $15,000 final expense policy commonly covers, how it compares to $10,000 and $20,000, and what actually drives the price." },
 };
 
 export default function FifteenThousandCostPage() {

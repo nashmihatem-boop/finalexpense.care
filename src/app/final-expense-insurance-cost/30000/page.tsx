@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$30,000 Final Expense Insurance Cost",
   description:
     "What a $30,000 final expense policy commonly covers, who tends to choose it, and what actually drives the price.",
+  openGraph: { title: "$30,000 Final Expense Insurance Cost", description: "What a $30,000 final expense policy commonly covers, who tends to choose it, and what actually drives the price." },
+
+  twitter: { title: "$30,000 Final Expense Insurance Cost", description: "What a $30,000 final expense policy commonly covers, who tends to choose it, and what actually drives the price." },
 };
 
 export default function ThirtyThousandCostPage() {

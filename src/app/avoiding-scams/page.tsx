@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Avoiding Final Expense Insurance Scams",
   description:
     "Why final expense insurance draws scammers, how to verify a company is legitimate, and six specific things to check before you buy or switch a policy.",
+  openGraph: { title: "Avoiding Final Expense Insurance Scams", description: "Why final expense insurance draws scammers, how to verify a company is legitimate, and six specific things to check before you buy or switch a policy." },
+
+  twitter: { title: "Avoiding Final Expense Insurance Scams", description: "Why final expense insurance draws scammers, how to verify a company is legitimate, and six specific things to check before you buy or switch a policy." },
 };
 
 const TOPICS = [

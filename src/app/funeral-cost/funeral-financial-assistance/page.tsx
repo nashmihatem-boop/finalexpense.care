@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Financial Assistance for Funeral Costs",
   description:
     "The real categories of help available when a family can't cover a funeral — and why having final expense coverage in place means you never have to rely on them.",
+  openGraph: { title: "Financial Assistance for Funeral Costs", description: "The real categories of help available when a family can't cover a funeral — and why having final expense coverage in place means you never have to rely on them." },
+
+  twitter: { title: "Financial Assistance for Funeral Costs", description: "The real categories of help available when a family can't cover a funeral — and why having final expense coverage in place means you never have to rely on them." },
 };
 
 export default function FuneralFinancialAssistancePage() {

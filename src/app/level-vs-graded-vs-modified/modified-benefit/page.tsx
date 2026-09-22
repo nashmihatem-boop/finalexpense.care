@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Modified Benefit Final Expense Insurance Explained",
   description:
     "How the return-of-premium-plus-interest structure works during the waiting window, how it differs from graded, and who typically lands here.",
+  openGraph: { title: "Modified Benefit Final Expense Insurance Explained", description: "How the return-of-premium-plus-interest structure works during the waiting window, how it differs from graded, and who typically lands here." },
+
+  twitter: { title: "Modified Benefit Final Expense Insurance Explained", description: "How the return-of-premium-plus-interest structure works during the waiting window, how it differs from graded, and who typically lands here." },
 };
 
 export default function ModifiedBenefitPage() {

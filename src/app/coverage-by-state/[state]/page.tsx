@@ -20,9 +20,13 @@ export async function generateMetadata(props: PageProps<"/coverage-by-state/[sta
   const { state: slug } = await props.params;
   const state = findState(slug);
   if (!state) return {};
+  const title = `Final Expense Insurance in ${state.name} | Costs, Regulations & Quotes`;
+  const description = `Final expense insurance in ${state.name}: how coverage works, what affects your rate, state regulations, veteran burial benefits, and how to get a free quote from a licensed agent.`;
   return {
-    title: `Final Expense Insurance in ${state.name} | Costs, Regulations & Quotes`,
-    description: `Final expense insurance in ${state.name}: how coverage works, what affects your rate, state regulations, veteran burial benefits, and how to get a free quote from a licensed agent.`,
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Is Final Expense Insurance Worth It?",
   description:
     "An honest, balanced look at who final expense insurance is genuinely a good fit for, and who might not need it.",
+  openGraph: { title: "Is Final Expense Insurance Worth It?", description: "An honest, balanced look at who final expense insurance is genuinely a good fit for, and who might not need it." },
+
+  twitter: { title: "Is Final Expense Insurance Worth It?", description: "An honest, balanced look at who final expense insurance is genuinely a good fit for, and who might not need it." },
 };
 
 export default function IsItWorthItPage() {

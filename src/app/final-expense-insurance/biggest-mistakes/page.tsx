@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Biggest Mistakes Shopping for Final Expense Insurance",
   description:
     "Common, avoidable mistakes people make when shopping for final expense insurance, from comparing only one carrier to letting a policy lapse.",
+  openGraph: { title: "Biggest Mistakes Shopping for Final Expense Insurance", description: "Common, avoidable mistakes people make when shopping for final expense insurance, from comparing only one carrier to letting a policy lapse." },
+
+  twitter: { title: "Biggest Mistakes Shopping for Final Expense Insurance", description: "Common, avoidable mistakes people make when shopping for final expense insurance, from comparing only one carrier to letting a policy lapse." },
 };
 
 export default function BiggestMistakesPage() {

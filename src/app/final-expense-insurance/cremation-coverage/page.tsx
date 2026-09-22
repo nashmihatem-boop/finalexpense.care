@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance and Cremation Costs",
   description:
     "How a final expense policy's cash benefit works if your family chooses cremation, and how it differs from a prepaid cremation plan.",
+  openGraph: { title: "Final Expense Insurance and Cremation Costs", description: "How a final expense policy's cash benefit works if your family chooses cremation, and how it differs from a prepaid cremation plan." },
+
+  twitter: { title: "Final Expense Insurance and Cremation Costs", description: "How a final expense policy's cash benefit works if your family chooses cremation, and how it differs from a prepaid cremation plan." },
 };
 
 export default function CremationCoveragePage() {

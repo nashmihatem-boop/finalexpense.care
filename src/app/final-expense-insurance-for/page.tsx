@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Family Member",
   description:
     "Final expense insurance is often bought by one family member for another — a spouse, sibling, parent, grandparent, or child. Here's how it works for each relationship.",
+  openGraph: { title: "Final Expense Insurance for a Family Member", description: "Final expense insurance is often bought by one family member for another — a spouse, sibling, parent, grandparent, or child. Here's how it works for each relationship." },
+
+  twitter: { title: "Final Expense Insurance for a Family Member", description: "Final expense insurance is often bought by one family member for another — a spouse, sibling, parent, grandparent, or child. Here's how it works for each relationship." },
 };
 
 const RELATIONSHIPS: { href: string; title: string; description: string; image: string }[] = [

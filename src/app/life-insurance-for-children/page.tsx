@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Life Insurance for Children, Explained",
   description:
     "How small whole life policies and riders for children work, why families buy them, and how they differ from senior-focused final expense coverage.",
+  openGraph: { title: "Life Insurance for Children, Explained", description: "How small whole life policies and riders for children work, why families buy them, and how they differ from senior-focused final expense coverage." },
+
+  twitter: { title: "Life Insurance for Children, Explained", description: "How small whole life policies and riders for children work, why families buy them, and how they differ from senior-focused final expense coverage." },
 };
 
 export default function LifeInsuranceForChildrenPage() {

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance Explained",
   description:
     "How final expense (burial) insurance works, the two main policy types, what affects your premium, and how to apply — in plain language.",
+  openGraph: { title: "Final Expense Insurance Explained", description: "How final expense (burial) insurance works, the two main policy types, what affects your premium, and how to apply — in plain language." },
+
+  twitter: { title: "Final Expense Insurance Explained", description: "How final expense (burial) insurance works, the two main policy types, what affects your premium, and how to apply — in plain language." },
 };
 
 export default function FinalExpenseInsurancePage() {

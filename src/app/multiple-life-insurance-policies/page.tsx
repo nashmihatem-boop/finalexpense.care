@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Can You Have More Than One Life Insurance Policy?",
   description:
     "Yes — here's how holding multiple life insurance policies actually works, why people do it, and when it can draw extra underwriting attention.",
+  openGraph: { title: "Can You Have More Than One Life Insurance Policy?", description: "Yes — here's how holding multiple life insurance policies actually works, why people do it, and when it can draw extra underwriting attention." },
+
+  twitter: { title: "Can You Have More Than One Life Insurance Policy?", description: "Yes — here's how holding multiple life insurance policies actually works, why people do it, and when it can draw extra underwriting attention." },
 };
 
 export default function MultipleLifeInsurancePoliciesPage() {

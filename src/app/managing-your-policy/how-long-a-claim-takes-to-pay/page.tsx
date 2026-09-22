@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "How Long a Life Insurance Claim Takes to Pay",
   description:
     "The main factors that speed up or slow down a death benefit claim, and how a beneficiary can help it move faster.",
+  openGraph: { title: "How Long a Life Insurance Claim Takes to Pay", description: "The main factors that speed up or slow down a death benefit claim, and how a beneficiary can help it move faster." },
+
+  twitter: { title: "How Long a Life Insurance Claim Takes to Pay", description: "The main factors that speed up or slow down a death benefit claim, and how a beneficiary can help it move faster." },
 };
 
 export default function HowLongAClaimTakesToPayPage() {

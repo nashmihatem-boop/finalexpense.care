@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Can You Be Denied Final Expense Insurance?",
   description: "What actually causes a decline on a final expense application, and what your options are if it happens.",
+  openGraph: {
+    title: "Can You Be Denied Final Expense Insurance?",
+    description: "What actually causes a decline on a final expense application, and what your options are if it happens.",
+  },
+  twitter: {
+    title: "Can You Be Denied Final Expense Insurance?",
+    description: "What actually causes a decline on a final expense application, and what your options are if it happens.",
+  },
 };
 
 export default function CanYouBeDeniedPage() {

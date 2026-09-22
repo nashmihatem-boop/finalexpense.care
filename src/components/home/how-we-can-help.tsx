@@ -82,7 +82,7 @@ export function HowWeCanHelp() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/photos/planning-seniors-conversation.jpg"
-              alt=""
+              alt="A group of seniors gathered together in conversation"
               fill
               sizes="(min-width: 1024px) 540px, 100vw"
               className="object-cover"

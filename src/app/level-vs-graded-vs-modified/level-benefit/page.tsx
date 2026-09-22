@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Level Benefit Final Expense Insurance Explained",
   description:
     "What a level death benefit means, why it's typically the lowest-cost outcome, and what kind of health profile usually qualifies.",
+  openGraph: { title: "Level Benefit Final Expense Insurance Explained", description: "What a level death benefit means, why it's typically the lowest-cost outcome, and what kind of health profile usually qualifies." },
+
+  twitter: { title: "Level Benefit Final Expense Insurance Explained", description: "What a level death benefit means, why it's typically the lowest-cost outcome, and what kind of health profile usually qualifies." },
 };
 
 export default function LevelBenefitPage() {

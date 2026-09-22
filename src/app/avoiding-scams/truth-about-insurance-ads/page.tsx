@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "The Truth About Final Expense Insurance Ads",
   description:
     "How to read \"as low as\" pricing, the real difference between no medical exam and no health questions, and why a familiar face in an ad isn't a recommendation.",
+  openGraph: { title: "The Truth About Final Expense Insurance Ads", description: "How to read \"as low as\" pricing, the real difference between no medical exam and no health questions, and why a familiar face in an ad isn't a recommendation." },
+
+  twitter: { title: "The Truth About Final Expense Insurance Ads", description: "How to read \"as low as\" pricing, the real difference between no medical exam and no health questions, and why a familiar face in an ad isn't a recommendation." },
 };
 
 export default function TruthAboutInsuranceAdsPage() {

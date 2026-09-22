@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance in Your 80s",
   description:
     "You likely haven't aged out. What to know about applying for final expense insurance in your 80s, including when guaranteed issue makes sense.",
+  openGraph: { title: "Final Expense Insurance in Your 80s", description: "You likely haven't aged out. What to know about applying for final expense insurance in your 80s, including when guaranteed issue makes sense." },
+
+  twitter: { title: "Final Expense Insurance in Your 80s", description: "You likely haven't aged out. What to know about applying for final expense insurance in your 80s, including when guaranteed issue makes sense." },
 };
 
 export default function FinalExpenseInsuranceInYour80sPage() {
@@ -23,7 +26,7 @@ export default function FinalExpenseInsuranceInYour80sPage() {
         <div className="relative mt-8 aspect-[16/7] overflow-hidden rounded-2xl">
           <Image
             src="/photos/senior-candid-smile-outdoors.jpg"
-            alt=""
+            alt="A woman in her 80s smiling outdoors"
             fill
             sizes="(min-width: 640px) 768px, 100vw"
             className="object-cover"

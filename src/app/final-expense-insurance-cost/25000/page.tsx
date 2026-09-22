@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$25,000 Final Expense Insurance Cost",
   description:
     "What a $25,000 final expense policy is meant to cover beyond the funeral itself, and what actually drives the price.",
+  openGraph: { title: "$25,000 Final Expense Insurance Cost", description: "What a $25,000 final expense policy is meant to cover beyond the funeral itself, and what actually drives the price." },
+
+  twitter: { title: "$25,000 Final Expense Insurance Cost", description: "What a $25,000 final expense policy is meant to cover beyond the funeral itself, and what actually drives the price." },
 };
 
 export default function TwentyFiveThousandCostPage() {

@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "No Waiting Period Final Expense Insurance",
   description: "How to qualify for day-one final expense coverage with no waiting period, even with a health condition.",
+  openGraph: {
+    title: "No Waiting Period Final Expense Insurance",
+    description: "How to qualify for day-one final expense coverage with no waiting period, even with a health condition.",
+  },
+  twitter: {
+    title: "No Waiting Period Final Expense Insurance",
+    description: "How to qualify for day-one final expense coverage with no waiting period, even with a health condition.",
+  },
 };
 
 export default function NoWaitingPeriodPage() {

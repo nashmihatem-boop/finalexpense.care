@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Life Insurance vs. Accidental Death Insurance",
   description:
     "Accidental death insurance only pays for accidents — not illness or natural causes. Here's why that distinction matters, especially later in life.",
+  openGraph: { title: "Life Insurance vs. Accidental Death Insurance", description: "Accidental death insurance only pays for accidents — not illness or natural causes. Here's why that distinction matters, especially later in life." },
+
+  twitter: { title: "Life Insurance vs. Accidental Death Insurance", description: "Accidental death insurance only pays for accidents — not illness or natural causes. Here's why that distinction matters, especially later in life." },
 };
 
 export default function LifeInsuranceVsAccidentalDeathInsurancePage() {

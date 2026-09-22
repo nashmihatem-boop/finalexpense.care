@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$10,000 Final Expense Insurance Cost",
   description:
     "What a $10,000 final expense policy commonly covers, how cremation and burial costs compare, and what actually drives the price.",
+  openGraph: { title: "$10,000 Final Expense Insurance Cost", description: "What a $10,000 final expense policy commonly covers, how cremation and burial costs compare, and what actually drives the price." },
+
+  twitter: { title: "$10,000 Final Expense Insurance Cost", description: "What a $10,000 final expense policy commonly covers, how cremation and burial costs compare, and what actually drives the price." },
 };
 
 export default function TenThousandCostPage() {

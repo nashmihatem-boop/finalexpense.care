@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance in Your 70s",
   description:
     "Why your 70s are one of the most common ages to buy final expense insurance, and how to handle health questions when a condition applies to you.",
+  openGraph: { title: "Final Expense Insurance in Your 70s", description: "Why your 70s are one of the most common ages to buy final expense insurance, and how to handle health questions when a condition applies to you." },
+
+  twitter: { title: "Final Expense Insurance in Your 70s", description: "Why your 70s are one of the most common ages to buy final expense insurance, and how to handle health questions when a condition applies to you." },
 };
 
 export default function FinalExpenseInsuranceInYour70sPage() {
@@ -22,7 +25,7 @@ export default function FinalExpenseInsuranceInYour70sPage() {
         <div className="relative mt-8 aspect-[16/7] overflow-hidden rounded-2xl">
           <Image
             src="/photos/senior-reading-porch.jpg"
-            alt=""
+            alt="A woman in her 70s reading on a porch"
             fill
             sizes="(min-width: 640px) 768px, 100vw"
             className="object-cover"

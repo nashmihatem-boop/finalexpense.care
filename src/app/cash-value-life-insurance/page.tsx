@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "What Is Cash Value in Life Insurance?",
   description:
     "How cash value builds inside a whole life or final expense policy, who it belongs to, and how it's different from the death benefit.",
+  openGraph: { title: "What Is Cash Value in Life Insurance?", description: "How cash value builds inside a whole life or final expense policy, who it belongs to, and how it's different from the death benefit." },
+
+  twitter: { title: "What Is Cash Value in Life Insurance?", description: "How cash value builds inside a whole life or final expense policy, who it belongs to, and how it's different from the death benefit." },
 };
 
 export default function CashValueLifeInsurancePage() {

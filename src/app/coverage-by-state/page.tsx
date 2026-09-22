@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance by State",
   description:
     "Final expense insurance is regulated state by state. Pick your state to see how coverage works where you live and get a free quote.",
+  openGraph: { title: "Final Expense Insurance by State", description: "Final expense insurance is regulated state by state. Pick your state to see how coverage works where you live and get a free quote." },
+
+  twitter: { title: "Final Expense Insurance by State", description: "Final expense insurance is regulated state by state. Pick your state to see how coverage works where you live and get a free quote." },
 };
 
 const FAQS = [

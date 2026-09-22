@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance Cost by Coverage Amount",
   description:
     "What actually drives your final expense insurance premium, and what coverage amounts from $5,000 to $40,000 and up are typically meant to cover.",
+  openGraph: { title: "Final Expense Insurance Cost by Coverage Amount", description: "What actually drives your final expense insurance premium, and what coverage amounts from $5,000 to $40,000 and up are typically meant to cover." },
+
+  twitter: { title: "Final Expense Insurance Cost by Coverage Amount", description: "What actually drives your final expense insurance premium, and what coverage amounts from $5,000 to $40,000 and up are typically meant to cover." },
 };
 
 const COST_TIERS = [

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal-page";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = { title: "Opt Out / Do Not Call" };
+export const metadata: Metadata = {
+  title: "Opt Out / Do Not Call",
+  openGraph: { title: "Opt Out / Do Not Call — FinalExpense.care" },
+  twitter: { title: "Opt Out / Do Not Call — FinalExpense.care" },
+};
 
 export default function DoNotCallPage() {
   return (

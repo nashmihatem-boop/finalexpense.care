@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Is Policy Churning, and How Do You Avoid It?",
   description:
     "How churning — replacing a policy you already have mainly to generate a new commission — can cost you a new contestability period and lost cash value.",
+  openGraph: { title: "What Is Policy Churning, and How Do You Avoid It?", description: "How churning — replacing a policy you already have mainly to generate a new commission — can cost you a new contestability period and lost cash value." },
+
+  twitter: { title: "What Is Policy Churning, and How Do You Avoid It?", description: "How churning — replacing a policy you already have mainly to generate a new commission — can cost you a new contestability period and lost cash value." },
 };
 
 export default function PolicyChurningPage() {

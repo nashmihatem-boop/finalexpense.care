@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$5,000 Final Expense Insurance Cost",
   description:
     "What a $5,000 final expense policy is typically meant to cover, who tends to choose this amount, and what actually determines your price.",
+  openGraph: { title: "$5,000 Final Expense Insurance Cost", description: "What a $5,000 final expense policy is typically meant to cover, who tends to choose this amount, and what actually determines your price." },
+
+  twitter: { title: "$5,000 Final Expense Insurance Cost", description: "What a $5,000 final expense policy is typically meant to cover, who tends to choose this amount, and what actually determines your price." },
 };
 
 export default function FiveThousandCostPage() {

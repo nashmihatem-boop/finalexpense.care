@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Life Insurance vs. a Savings Account",
   description:
     "A savings account only holds what you've deposited. A life insurance policy can pay its full amount from day one. Here's how to think about both.",
+  openGraph: { title: "Life Insurance vs. a Savings Account", description: "A savings account only holds what you've deposited. A life insurance policy can pay its full amount from day one. Here's how to think about both." },
+
+  twitter: { title: "Life Insurance vs. a Savings Account", description: "A savings account only holds what you've deposited. A life insurance policy can pay its full amount from day one. Here's how to think about both." },
 };
 
 export default function LifeInsuranceVsSavingsAccountPage() {

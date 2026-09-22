@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "If Your Beneficiary Dies Before You",
   description:
     "What happens to your policy if your named beneficiary passes away first, and why naming a contingent beneficiary matters.",
+  openGraph: { title: "If Your Beneficiary Dies Before You", description: "What happens to your policy if your named beneficiary passes away first, and why naming a contingent beneficiary matters." },
+
+  twitter: { title: "If Your Beneficiary Dies Before You", description: "What happens to your policy if your named beneficiary passes away first, and why naming a contingent beneficiary matters." },
 };
 
 export default function BeneficiaryDiesBeforeYouPage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Affects Headstone & Grave Marker Cost",
   description:
     "How material, size, and engraving affect headstone and grave marker pricing, and how to get an accurate quote.",
+  openGraph: { title: "What Affects Headstone & Grave Marker Cost", description: "How material, size, and engraving affect headstone and grave marker pricing, and how to get an accurate quote." },
+
+  twitter: { title: "What Affects Headstone & Grave Marker Cost", description: "How material, size, and engraving affect headstone and grave marker pricing, and how to get an accurate quote." },
 };
 
 export default function HeadstoneCostPage() {

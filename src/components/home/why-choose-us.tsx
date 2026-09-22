@@ -95,7 +95,7 @@ export function WhyChooseUs() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:order-2">
             <Image
               src="/photos/family-multigenerational-group.jpg"
-              alt=""
+              alt="Three generations of a family together in their kitchen"
               fill
               sizes="(min-width: 1024px) 540px, 100vw"
               className="object-cover"

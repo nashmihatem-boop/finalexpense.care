@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "What Happens If You Miss a Premium Payment",
   description:
     "How grace periods work, what happens if a policy lapses, and what to do if you've missed a payment.",
+  openGraph: { title: "What Happens If You Miss a Premium Payment", description: "How grace periods work, what happens if a policy lapses, and what to do if you've missed a payment." },
+
+  twitter: { title: "What Happens If You Miss a Premium Payment", description: "How grace periods work, what happens if a policy lapses, and what to do if you've missed a payment." },
 };
 
 export default function MissedPremiumPaymentPage() {

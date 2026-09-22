@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Is Direct Cremation?",
   description:
     "How direct cremation works, why it's generally the least expensive disposition option, and how families pair it with a memorial service on their own timeline.",
+  openGraph: { title: "What Is Direct Cremation?", description: "How direct cremation works, why it's generally the least expensive disposition option, and how families pair it with a memorial service on their own timeline." },
+
+  twitter: { title: "What Is Direct Cremation?", description: "How direct cremation works, why it's generally the least expensive disposition option, and how families pair it with a memorial service on their own timeline." },
 };
 
 export default function DirectCremationPage() {

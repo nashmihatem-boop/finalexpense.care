@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Traditional Funeral vs. Direct Burial",
   description:
     "An honest comparison of what a traditional funeral includes versus direct burial, why the cost differs, and how families decide between them.",
+  openGraph: { title: "Traditional Funeral vs. Direct Burial", description: "An honest comparison of what a traditional funeral includes versus direct burial, why the cost differs, and how families decide between them." },
+
+  twitter: { title: "Traditional Funeral vs. Direct Burial", description: "An honest comparison of what a traditional funeral includes versus direct burial, why the cost differs, and how families decide between them." },
 };
 
 export default function TraditionalFuneralVsDirectBurialPage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Life Insurance Riders, Explained",
   description:
     "What a rider is, how it attaches to a base policy, and a few common examples like accelerated death benefit and waiver-of-premium riders.",
+  openGraph: { title: "Life Insurance Riders, Explained", description: "What a rider is, how it attaches to a base policy, and a few common examples like accelerated death benefit and waiver-of-premium riders." },
+
+  twitter: { title: "Life Insurance Riders, Explained", description: "What a rider is, how it attaches to a base policy, and a few common examples like accelerated death benefit and waiver-of-premium riders." },
 };
 
 export default function LifeInsuranceRidersPage() {

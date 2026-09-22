@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How Life Insurance Underwriting Works",
   description:
     "How insurers decide what to offer and at what price, and how simplified-issue underwriting for final expense insurance differs from a fully underwritten traditional policy.",
+  openGraph: { title: "How Life Insurance Underwriting Works", description: "How insurers decide what to offer and at what price, and how simplified-issue underwriting for final expense insurance differs from a fully underwritten traditional policy." },
+
+  twitter: { title: "How Life Insurance Underwriting Works", description: "How insurers decide what to offer and at what price, and how simplified-issue underwriting for final expense insurance differs from a fully underwritten traditional policy." },
 };
 
 export default function HowUnderwritingWorksPage() {

@@ -12,9 +12,13 @@ export async function generateMetadata(props: PageProps<"/pre-existing-condition
   const { medication: slug } = await props.params;
   const medication = findMedication(slug);
   if (!medication) return {};
+  const title = `${medication.name} and Final Expense Insurance`;
+  const description = `How a ${medication.name.toLowerCase()} prescription is typically viewed when applying for final expense insurance.`;
   return {
-    title: `${medication.name} and Final Expense Insurance`,
-    description: `How a ${medication.name.toLowerCase()} prescription is typically viewed when applying for final expense insurance.`,
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

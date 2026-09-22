@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Affects the Cost of Cremation",
   description:
     "The real factors that move cremation pricing up or down — service type, urn choice, and provider — and how to get an accurate number for your area.",
+  openGraph: { title: "What Affects the Cost of Cremation", description: "The real factors that move cremation pricing up or down — service type, urn choice, and provider — and how to get an accurate number for your area." },
+
+  twitter: { title: "What Affects the Cost of Cremation", description: "The real factors that move cremation pricing up or down — service type, urn choice, and provider — and how to get an accurate number for your area." },
 };
 
 export default function CremationCostPage() {

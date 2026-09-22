@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "What to Know Before You Cancel a Policy",
   description:
     "How canceling a life insurance policy works, what happens to any cash value, and what to check before you let coverage go.",
+  openGraph: { title: "What to Know Before You Cancel a Policy", description: "How canceling a life insurance policy works, what happens to any cash value, and what to check before you let coverage go." },
+
+  twitter: { title: "What to Know Before You Cancel a Policy", description: "How canceling a life insurance policy works, what happens to any cash value, and what to check before you let coverage go." },
 };
 
 export default function CancelPolicyPage() {

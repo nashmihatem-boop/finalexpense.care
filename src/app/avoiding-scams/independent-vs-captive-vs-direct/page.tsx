@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Independent vs. Captive vs. Direct: How You're Buying Insurance",
   description:
     "An honest explanation of the three ways to buy final expense insurance — captive agent, independent agent, or direct from a carrier — and the real tradeoffs of each.",
+  openGraph: { title: "Independent vs. Captive vs. Direct: How You're Buying Insurance", description: "An honest explanation of the three ways to buy final expense insurance — captive agent, independent agent, or direct from a carrier — and the real tradeoffs of each." },
+
+  twitter: { title: "Independent vs. Captive vs. Direct: How You're Buying Insurance", description: "An honest explanation of the three ways to buy final expense insurance — captive agent, independent agent, or direct from a carrier — and the real tradeoffs of each." },
 };
 
 export default function IndependentVsCaptiveVsDirectPage() {

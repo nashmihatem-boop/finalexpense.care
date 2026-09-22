@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense vs. Term Life Insurance",
   description:
     "A closer look at how final expense insurance and term life insurance actually differ — underwriting, coverage length, what each is built to pay for, and how to decide.",
+  openGraph: { title: "Final Expense vs. Term Life Insurance", description: "A closer look at how final expense insurance and term life insurance actually differ — underwriting, coverage length, what each is built to pay for, and how to decide." },
+
+  twitter: { title: "Final Expense vs. Term Life Insurance", description: "A closer look at how final expense insurance and term life insurance actually differ — underwriting, coverage length, what each is built to pay for, and how to decide." },
 };
 
 export default function FinalExpenseVsTermLifePage() {

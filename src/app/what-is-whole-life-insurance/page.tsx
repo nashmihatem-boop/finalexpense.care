@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Is Whole Life Insurance?",
   description:
     "A foundational explainer: permanent coverage for your entire life, level premiums that never increase, a guaranteed death benefit, and built-in cash value.",
+  openGraph: { title: "What Is Whole Life Insurance?", description: "A foundational explainer: permanent coverage for your entire life, level premiums that never increase, a guaranteed death benefit, and built-in cash value." },
+
+  twitter: { title: "What Is Whole Life Insurance?", description: "A foundational explainer: permanent coverage for your entire life, level premiums that never increase, a guaranteed death benefit, and built-in cash value." },
 };
 
 export default function WhatIsWholeLifeInsurancePage() {

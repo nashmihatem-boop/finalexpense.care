@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$40,000 Final Expense Insurance Cost",
   description:
     "What a $40,000-and-up final expense policy is meant to cover, where final expense starts overlapping with whole life insurance, and what drives the price.",
+  openGraph: { title: "$40,000 Final Expense Insurance Cost", description: "What a $40,000-and-up final expense policy is meant to cover, where final expense starts overlapping with whole life insurance, and what drives the price." },
+
+  twitter: { title: "$40,000 Final Expense Insurance Cost", description: "What a $40,000-and-up final expense policy is meant to cover, where final expense starts overlapping with whole life insurance, and what drives the price." },
 };
 
 export default function FortyThousandCostPage() {

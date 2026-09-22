@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "The Hidden Costs of Dying Families Don't Plan For",
   description:
     "Beyond the funeral itself — probate, medical bills, debt, final utility payments, family travel, and lost income are costs many families don't think about until it's too late.",
+  openGraph: { title: "The Hidden Costs of Dying Families Don't Plan For", description: "Beyond the funeral itself — probate, medical bills, debt, final utility payments, family travel, and lost income are costs many families don't think about until it's too late." },
+
+  twitter: { title: "The Hidden Costs of Dying Families Don't Plan For", description: "Beyond the funeral itself — probate, medical bills, debt, final utility payments, family travel, and lost income are costs many families don't think about until it's too late." },
 };
 
 export default function HiddenCostsOfDyingPage() {

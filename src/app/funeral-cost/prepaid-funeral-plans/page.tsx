@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Prepaid Funeral Plans vs. Final Expense Insurance",
   description:
     "How a prepaid funeral plan works, how it differs from final expense insurance, and the real tradeoffs to weigh before choosing either.",
+  openGraph: { title: "Prepaid Funeral Plans vs. Final Expense Insurance", description: "How a prepaid funeral plan works, how it differs from final expense insurance, and the real tradeoffs to weigh before choosing either." },
+
+  twitter: { title: "Prepaid Funeral Plans vs. Final Expense Insurance", description: "How a prepaid funeral plan works, how it differs from final expense insurance, and the real tradeoffs to weigh before choosing either." },
 };
 
 export default function PrepaidFuneralPlansPage() {

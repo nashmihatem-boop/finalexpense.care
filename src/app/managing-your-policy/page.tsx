@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Managing Your Policy",
   description:
     "Already have a final expense or life insurance policy? Find help with claims, beneficiaries, missed payments, cash value, and more.",
+  openGraph: { title: "Managing Your Policy", description: "Already have a final expense or life insurance policy? Find help with claims, beneficiaries, missed payments, cash value, and more." },
+
+  twitter: { title: "Managing Your Policy", description: "Already have a final expense or life insurance policy? Find help with claims, beneficiaries, missed payments, cash value, and more." },
 };
 
 const TOPICS: { href: string; title: string; description: string; image?: string }[] = [

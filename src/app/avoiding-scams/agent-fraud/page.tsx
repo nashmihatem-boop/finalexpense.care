@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Recognize Agent Fraud",
   description:
     "Red flags that an insurance agent isn't acting in your interest — payment requests, blank forms, withheld paperwork — and what to do if you suspect fraud.",
+  openGraph: { title: "How to Recognize Agent Fraud", description: "Red flags that an insurance agent isn't acting in your interest — payment requests, blank forms, withheld paperwork — and what to do if you suspect fraud." },
+
+  twitter: { title: "How to Recognize Agent Fraud", description: "Red flags that an insurance agent isn't acting in your interest — payment requests, blank forms, withheld paperwork — and what to do if you suspect fraud." },
 };
 
 export default function AgentFraudPage() {

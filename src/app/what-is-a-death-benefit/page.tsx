@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Is a Death Benefit?",
   description:
     "What a life insurance death benefit is, how it's paid, whether it's taxable, and what it can actually be used for.",
+  openGraph: { title: "What Is a Death Benefit?", description: "What a life insurance death benefit is, how it's paid, whether it's taxable, and what it can actually be used for." },
+
+  twitter: { title: "What Is a Death Benefit?", description: "What a life insurance death benefit is, how it's paid, whether it's taxable, and what it can actually be used for." },
 };
 
 export default function WhatIsADeathBenefitPage() {

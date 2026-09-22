@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Parent",
   description:
     "How adult children typically start the conversation, what a parent needs to be involved in, and how payment and ownership commonly work.",
+  openGraph: { title: "Final Expense Insurance for a Parent", description: "How adult children typically start the conversation, what a parent needs to be involved in, and how payment and ownership commonly work." },
+
+  twitter: { title: "Final Expense Insurance for a Parent", description: "How adult children typically start the conversation, what a parent needs to be involved in, and how payment and ownership commonly work." },
 };
 
 export default function ParentsPage() {

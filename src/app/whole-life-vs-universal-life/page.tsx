@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Whole Life vs. Universal Life Insurance",
   description:
     "A plain-language comparison of whole life and universal life insurance — fixed guarantees versus flexible premiums — and where final expense insurance fits.",
+  openGraph: { title: "Whole Life vs. Universal Life Insurance", description: "A plain-language comparison of whole life and universal life insurance — fixed guarantees versus flexible premiums — and where final expense insurance fits." },
+
+  twitter: { title: "Whole Life vs. Universal Life Insurance", description: "A plain-language comparison of whole life and universal life insurance — fixed guarantees versus flexible premiums — and where final expense insurance fits." },
 };
 
 export default function WholeLifeVsUniversalLifePage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Reduce Funeral Costs",
   description:
     "Practical, honest ways to reduce funeral costs — from knowing your rights under the FTC Funeral Rule to considering direct burial — and why coverage still matters even with a simple plan.",
+  openGraph: { title: "How to Reduce Funeral Costs", description: "Practical, honest ways to reduce funeral costs — from knowing your rights under the FTC Funeral Rule to considering direct burial — and why coverage still matters even with a simple plan." },
+
+  twitter: { title: "How to Reduce Funeral Costs", description: "Practical, honest ways to reduce funeral costs — from knowing your rights under the FTC Funeral Rule to considering direct burial — and why coverage still matters even with a simple plan." },
 };
 
 export default function ReduceFuneralCostsPage() {

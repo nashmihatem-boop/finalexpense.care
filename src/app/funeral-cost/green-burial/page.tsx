@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Is Green Burial?",
   description:
     "What eco-friendly or green burial actually involves, and why it's often, though not always, less costly than a traditional burial.",
+  openGraph: { title: "What Is Green Burial?", description: "What eco-friendly or green burial actually involves, and why it's often, though not always, less costly than a traditional burial." },
+
+  twitter: { title: "What Is Green Burial?", description: "What eco-friendly or green burial actually involves, and why it's often, though not always, less costly than a traditional burial." },
 };
 
 export default function GreenBurialPage() {

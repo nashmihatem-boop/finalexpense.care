@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance in Your 60s",
   description:
     "What changes when you apply for final expense insurance in your 60s, including how pre-existing conditions start to factor into your rate.",
+  openGraph: { title: "Final Expense Insurance in Your 60s", description: "What changes when you apply for final expense insurance in your 60s, including how pre-existing conditions start to factor into your rate." },
+
+  twitter: { title: "Final Expense Insurance in Your 60s", description: "What changes when you apply for final expense insurance in your 60s, including how pre-existing conditions start to factor into your rate." },
 };
 
 export default function FinalExpenseInsuranceInYour60sPage() {
@@ -22,7 +25,7 @@ export default function FinalExpenseInsuranceInYour60sPage() {
         <div className="relative mt-8 aspect-[16/7] overflow-hidden rounded-2xl">
           <Image
             src="/photos/senior-walking-outdoors.jpg"
-            alt=""
+            alt="A couple in their 60s walking together outdoors"
             fill
             sizes="(min-width: 640px) 768px, 100vw"
             className="object-cover"

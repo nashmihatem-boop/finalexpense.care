@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Sibling",
   description:
     "Buying final expense coverage for a brother or sister, what insurable interest means in practice, and how the application typically works.",
+  openGraph: { title: "Final Expense Insurance for a Sibling", description: "Buying final expense coverage for a brother or sister, what insurable interest means in practice, and how the application typically works." },
+
+  twitter: { title: "Final Expense Insurance for a Sibling", description: "Buying final expense coverage for a brother or sister, what insurable interest means in practice, and how the application typically works." },
 };
 
 export default function SiblingPage() {

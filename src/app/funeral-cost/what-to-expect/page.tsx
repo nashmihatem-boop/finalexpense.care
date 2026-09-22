@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What to Expect When Planning a Funeral",
   description:
     "A step-by-step walkthrough of the funeral planning process and the decisions — and costs — involved at each stage.",
+  openGraph: { title: "What to Expect When Planning a Funeral", description: "A step-by-step walkthrough of the funeral planning process and the decisions — and costs — involved at each stage." },
+
+  twitter: { title: "What to Expect When Planning a Funeral", description: "A step-by-step walkthrough of the funeral planning process and the decisions — and costs — involved at each stage." },
 };
 
 export default function WhatToExpectPage() {

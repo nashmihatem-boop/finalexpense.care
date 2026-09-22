@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal-page";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = { title: "Disclaimer" };
+export const metadata: Metadata = {
+  title: "Disclaimer",
+  openGraph: { title: "Disclaimer — FinalExpense.care" },
+  twitter: { title: "Disclaimer — FinalExpense.care" },
+};
 
 export default function DisclaimerPage() {
   return (

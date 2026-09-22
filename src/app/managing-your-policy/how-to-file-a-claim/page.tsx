@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "How to File a Death Benefit Claim",
   description:
     "The general steps a beneficiary takes to file a life insurance claim, from locating the policy to submitting paperwork.",
+  openGraph: { title: "How to File a Death Benefit Claim", description: "The general steps a beneficiary takes to file a life insurance claim, from locating the policy to submitting paperwork." },
+
+  twitter: { title: "How to File a Death Benefit Claim", description: "The general steps a beneficiary takes to file a life insurance claim, from locating the policy to submitting paperwork." },
 };
 
 export default function HowToFileAClaimPage() {

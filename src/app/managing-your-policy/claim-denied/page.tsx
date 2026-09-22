@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "What to Do If a Life Insurance Claim Is Denied",
   description:
     "Common reasons a death benefit claim gets denied, and the options a beneficiary has, from appeal to a state complaint.",
+  openGraph: { title: "What to Do If a Life Insurance Claim Is Denied", description: "Common reasons a death benefit claim gets denied, and the options a beneficiary has, from appeal to a state complaint." },
+
+  twitter: { title: "What to Do If a Life Insurance Claim Is Denied", description: "Common reasons a death benefit claim gets denied, and the options a beneficiary has, from appeal to a state complaint." },
 };
 
 export default function ClaimDeniedPage() {

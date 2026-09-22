@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "What Is a Beneficiary?",
   description:
     "Who can be named a life insurance beneficiary, the difference between primary and contingent beneficiaries, and why keeping this information current matters.",
+  openGraph: { title: "What Is a Beneficiary?", description: "Who can be named a life insurance beneficiary, the difference between primary and contingent beneficiaries, and why keeping this information current matters." },
+
+  twitter: { title: "What Is a Beneficiary?", description: "Who can be named a life insurance beneficiary, the difference between primary and contingent beneficiaries, and why keeping this information current matters." },
 };
 
 export default function WhatIsABeneficiaryPage() {

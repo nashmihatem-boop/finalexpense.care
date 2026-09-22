@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Affects Cemetery Plot Cost",
   description:
     "The factors that drive cemetery plot pricing — location, cemetery type, and fees like perpetual care — and how to get a real number.",
+  openGraph: { title: "What Affects Cemetery Plot Cost", description: "The factors that drive cemetery plot pricing — location, cemetery type, and fees like perpetual care — and how to get a real number." },
+
+  twitter: { title: "What Affects Cemetery Plot Cost", description: "The factors that drive cemetery plot pricing — location, cemetery type, and fees like perpetual care — and how to get a real number." },
 };
 
 export default function CemeteryPlotCostPage() {

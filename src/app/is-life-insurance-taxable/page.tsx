@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Is Life Insurance Taxable?",
   description:
     "The general federal tax rule for life insurance death benefits, a few well-established nuances, and why your specific situation still needs a tax professional.",
+  openGraph: { title: "Is Life Insurance Taxable?", description: "The general federal tax rule for life insurance death benefits, a few well-established nuances, and why your specific situation still needs a tax professional." },
+
+  twitter: { title: "Is Life Insurance Taxable?", description: "The general federal tax rule for life insurance death benefits, a few well-established nuances, and why your specific situation still needs a tax professional." },
 };
 
 export default function IsLifeInsuranceTaxablePage() {

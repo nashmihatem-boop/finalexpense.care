@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance Guides & Resources",
   description:
     "Every guide on FinalExpense.care in one place — coverage by state, pre-existing conditions, funeral costs, managing a policy, avoiding scams, and the basics of life insurance.",
+  openGraph: { title: "Final Expense Insurance Guides & Resources", description: "Every guide on FinalExpense.care in one place — coverage by state, pre-existing conditions, funeral costs, managing a policy, avoiding scams, and the basics of life insurance." },
+
+  twitter: { title: "Final Expense Insurance Guides & Resources", description: "Every guide on FinalExpense.care in one place — coverage by state, pre-existing conditions, funeral costs, managing a policy, avoiding scams, and the basics of life insurance." },
 };
 
 const FEATURED = [

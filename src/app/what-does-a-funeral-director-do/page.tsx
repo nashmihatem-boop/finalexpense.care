@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "What Does a Funeral Director Do?",
   description:
     "A respectful look at the role a funeral director actually plays — coordinating logistics, handling permits and paperwork, preparing the deceased, and guiding a grieving family.",
+  openGraph: { title: "What Does a Funeral Director Do?", description: "A respectful look at the role a funeral director actually plays — coordinating logistics, handling permits and paperwork, preparing the deceased, and guiding a grieving family." },
+
+  twitter: { title: "What Does a Funeral Director Do?", description: "A respectful look at the role a funeral director actually plays — coordinating logistics, handling permits and paperwork, preparing the deceased, and guiding a grieving family." },
 };
 
 export default function WhatDoesAFuneralDirectorDoPage() {

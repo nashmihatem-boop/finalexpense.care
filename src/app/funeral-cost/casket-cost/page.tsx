@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "What Affects the Cost of a Casket",
   description:
     "Why casket prices vary so much — material and craftsmanship — and your legal right to buy one from outside the funeral home.",
+  openGraph: { title: "What Affects the Cost of a Casket", description: "Why casket prices vary so much — material and craftsmanship — and your legal right to buy one from outside the funeral home." },
+
+  twitter: { title: "What Affects the Cost of a Casket", description: "Why casket prices vary so much — material and craftsmanship — and your legal right to buy one from outside the funeral home." },
 };
 
 export default function CasketCostPage() {

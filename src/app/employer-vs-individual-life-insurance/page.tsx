@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Employer Life Insurance vs. an Individual Policy",
   description:
     "Group life insurance through work is often free, but it's usually small and tied to your job. Here's how it compares to a policy you own yourself.",
+  openGraph: { title: "Employer Life Insurance vs. an Individual Policy", description: "Group life insurance through work is often free, but it's usually small and tied to your job. Here's how it compares to a policy you own yourself." },
+
+  twitter: { title: "Employer Life Insurance vs. an Individual Policy", description: "Group life insurance through work is often free, but it's usually small and tied to your job. Here's how it compares to a policy you own yourself." },
 };
 
 export default function EmployerVsIndividualLifeInsurancePage() {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance with Pre-Existing Conditions",
   description:
     "How simplified-issue underwriting treats common health conditions, what level/graded/modified/guaranteed-acceptance actually mean, and how to find your likely path before you apply.",
+  openGraph: { title: "Final Expense Insurance with Pre-Existing Conditions", description: "How simplified-issue underwriting treats common health conditions, what level/graded/modified/guaranteed-acceptance actually mean, and how to find your likely path before you apply." },
+
+  twitter: { title: "Final Expense Insurance with Pre-Existing Conditions", description: "How simplified-issue underwriting treats common health conditions, what level/graded/modified/guaranteed-acceptance actually mean, and how to find your likely path before you apply." },
 };
 
 const TOC = [

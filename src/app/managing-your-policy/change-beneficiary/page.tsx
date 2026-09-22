@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "How to Change Your Life Insurance Beneficiary",
   description:
     "How updating a policy's beneficiary works, and the common life events that lead people to do it.",
+  openGraph: { title: "How to Change Your Life Insurance Beneficiary", description: "How updating a policy's beneficiary works, and the common life events that lead people to do it." },
+
+  twitter: { title: "How to Change Your Life Insurance Beneficiary", description: "How updating a policy's beneficiary works, and the common life events that lead people to do it." },
 };
 
 export default function ChangeBeneficiaryPage() {

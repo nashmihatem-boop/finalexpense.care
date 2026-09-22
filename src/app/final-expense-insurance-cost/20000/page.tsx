@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "$20,000 Final Expense Insurance Cost",
   description:
     "Why $20,000 is one of the most commonly chosen final expense coverage amounts, what it's meant to cover, and what actually drives the price.",
+  openGraph: { title: "$20,000 Final Expense Insurance Cost", description: "Why $20,000 is one of the most commonly chosen final expense coverage amounts, what it's meant to cover, and what actually drives the price." },
+
+  twitter: { title: "$20,000 Final Expense Insurance Cost", description: "Why $20,000 is one of the most commonly chosen final expense coverage amounts, what it's meant to cover, and what actually drives the price." },
 };
 
 export default function TwentyThousandCostPage() {

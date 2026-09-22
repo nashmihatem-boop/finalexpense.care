@@ -12,9 +12,13 @@ export async function generateMetadata(props: PageProps<"/pre-existing-condition
   const { condition: slug } = await props.params;
   const condition = findCondition(slug);
   if (!condition) return {};
+  const title = `Final Expense Insurance with ${condition.name}`;
+  const description = `How simplified-issue final expense insurance typically treats ${condition.name}, what tier to expect, and how to get a free quote.`;
   return {
-    title: `Final Expense Insurance with ${condition.name}`,
-    description: `How simplified-issue final expense insurance typically treats ${condition.name}, what tier to expect, and how to get a free quote.`,
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

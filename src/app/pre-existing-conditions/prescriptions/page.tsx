@@ -6,6 +6,14 @@ import { MEDICATIONS } from "@/lib/medication-facts";
 export const metadata: Metadata = {
   title: "How Prescription History Affects Your Application",
   description: "Why the medications you take can matter as much as the diagnosis behind them when applying for final expense insurance.",
+  openGraph: {
+    title: "How Prescription History Affects Your Application",
+    description: "Why the medications you take can matter as much as the diagnosis behind them when applying for final expense insurance.",
+  },
+  twitter: {
+    title: "How Prescription History Affects Your Application",
+    description: "Why the medications you take can matter as much as the diagnosis behind them when applying for final expense insurance.",
+  },
 };
 
 export default function PrescriptionsPage() {

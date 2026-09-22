@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Life Insurance Glossary",
   description:
     "Plain-language definitions for the life insurance terms used across this site, from beneficiary and death benefit to lapse and look-back period.",
+  openGraph: { title: "Life Insurance Glossary", description: "Plain-language definitions for the life insurance terms used across this site, from beneficiary and death benefit to lapse and look-back period." },
+
+  twitter: { title: "Life Insurance Glossary", description: "Plain-language definitions for the life insurance terms used across this site, from beneficiary and death benefit to lapse and look-back period." },
 };
 
 const TERMS: { term: string; definition: ReactNode }[] = [

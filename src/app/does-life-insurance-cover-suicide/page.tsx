@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Does Life Insurance Cover Suicide?",
   description:
     "A factual, respectful explanation of how life insurance policies handle death by suicide, including the standard exclusion period.",
+  openGraph: { title: "Does Life Insurance Cover Suicide?", description: "A factual, respectful explanation of how life insurance policies handle death by suicide, including the standard exclusion period." },
+
+  twitter: { title: "Does Life Insurance Cover Suicide?", description: "A factual, respectful explanation of how life insurance policies handle death by suicide, including the standard exclusion period." },
 };
 
 export default function DoesLifeInsuranceCoverSuicidePage() {

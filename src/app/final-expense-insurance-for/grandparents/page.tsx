@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Grandparent",
   description:
     "How grandchildren and extended family typically arrange final expense coverage for a grandparent, and how to coordinate with the rest of the family.",
+  openGraph: { title: "Final Expense Insurance for a Grandparent", description: "How grandchildren and extended family typically arrange final expense coverage for a grandparent, and how to coordinate with the rest of the family." },
+
+  twitter: { title: "Final Expense Insurance for a Grandparent", description: "How grandchildren and extended family typically arrange final expense coverage for a grandparent, and how to coordinate with the rest of the family." },
 };
 
 export default function GrandparentsPage() {

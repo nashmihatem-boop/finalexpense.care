@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Borrowing Against Your Policy's Cash Value",
   description:
     "How a policy loan against a whole life policy's cash value works, and what an unpaid loan does to the death benefit.",
+  openGraph: { title: "Borrowing Against Your Policy's Cash Value", description: "How a policy loan against a whole life policy's cash value works, and what an unpaid loan does to the death benefit." },
+
+  twitter: { title: "Borrowing Against Your Policy's Cash Value", description: "How a policy loan against a whole life policy's cash value works, and what an unpaid loan does to the death benefit." },
 };
 
 export default function BorrowFromPolicyPage() {

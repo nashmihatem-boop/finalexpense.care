@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "How to Find a Lost Life Insurance Policy",
   description:
     "Practical steps for tracking down a policy you believe exists but can't find paperwork for, including free lookup resources.",
+  openGraph: { title: "How to Find a Lost Life Insurance Policy", description: "Practical steps for tracking down a policy you believe exists but can't find paperwork for, including free lookup resources." },
+
+  twitter: { title: "How to Find a Lost Life Insurance Policy", description: "Practical steps for tracking down a policy you believe exists but can't find paperwork for, including free lookup resources." },
 };
 
 export default function FindALostPolicyPage() {

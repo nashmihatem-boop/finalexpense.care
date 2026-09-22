@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "What Happens If You Die Without Life Insurance",
   description:
     "A plain-language look at who ends up covering funeral and final expenses when there's no life insurance policy in place.",
+  openGraph: { title: "What Happens If You Die Without Life Insurance", description: "A plain-language look at who ends up covering funeral and final expenses when there's no life insurance policy in place." },
+
+  twitter: { title: "What Happens If You Die Without Life Insurance", description: "A plain-language look at who ends up covering funeral and final expenses when there's no life insurance policy in place." },
 };
 
 export default function DyingWithoutLifeInsurancePage() {

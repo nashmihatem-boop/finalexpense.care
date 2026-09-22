@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Can You Buy Final Expense Insurance Online?",
   description:
     "What getting a quote online actually involves for final expense insurance, and why a phone call with a licensed agent is still part of the process.",
+  openGraph: { title: "Can You Buy Final Expense Insurance Online?", description: "What getting a quote online actually involves for final expense insurance, and why a phone call with a licensed agent is still part of the process." },
+
+  twitter: { title: "Can You Buy Final Expense Insurance Online?", description: "What getting a quote online actually involves for final expense insurance, and why a phone call with a licensed agent is still part of the process." },
 };
 
 export default function BuyOnlinePage() {

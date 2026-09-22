@@ -3,7 +3,11 @@ import { LegalPage } from "@/components/legal-page";
 import { consentDisclosureText } from "@/lib/consent-copy";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = { title: "Consent to Be Contacted" };
+export const metadata: Metadata = {
+  title: "Consent to Be Contacted",
+  openGraph: { title: "Consent to Be Contacted — FinalExpense.care" },
+  twitter: { title: "Consent to Be Contacted — FinalExpense.care" },
+};
 
 export default function TcpaConsentPage() {
   return (

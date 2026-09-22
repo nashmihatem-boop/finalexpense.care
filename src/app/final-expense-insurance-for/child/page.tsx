@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Child",
   description:
     "Final expense coverage for a child is a different, much smaller product than senior final expense insurance. Here's an honest look at how it works.",
+  openGraph: { title: "Final Expense Insurance for a Child", description: "Final expense coverage for a child is a different, much smaller product than senior final expense insurance. Here's an honest look at how it works." },
+
+  twitter: { title: "Final Expense Insurance for a Child", description: "Final expense coverage for a child is a different, much smaller product than senior final expense insurance. Here's an honest look at how it works." },
 };
 
 export default function ChildPage() {

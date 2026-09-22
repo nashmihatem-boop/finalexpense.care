@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "What Is a Celebration of Life Service?",
   description:
     "How a celebration of life compares to a traditional funeral, what it can include, and how it fits with burial or cremation plans.",
+  openGraph: { title: "What Is a Celebration of Life Service?", description: "How a celebration of life compares to a traditional funeral, what it can include, and how it fits with burial or cremation plans." },
+
+  twitter: { title: "What Is a Celebration of Life Service?", description: "How a celebration of life compares to a traditional funeral, what it can include, and how it fits with burial or cremation plans." },
 };
 
 export default function CelebrationOfLifePage() {

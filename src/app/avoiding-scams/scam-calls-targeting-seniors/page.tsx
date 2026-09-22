@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Recognize a Scam Call Targeting Seniors",
   description:
     "The specific differences between a legitimate final expense insurance call and a scam, and exactly what to do if you're on a suspicious call.",
+  openGraph: { title: "How to Recognize a Scam Call Targeting Seniors", description: "The specific differences between a legitimate final expense insurance call and a scam, and exactly what to do if you're on a suspicious call." },
+
+  twitter: { title: "How to Recognize a Scam Call Targeting Seniors", description: "The specific differences between a legitimate final expense insurance call and a scam, and exactly what to do if you're on a suspicious call." },
 };
 
 export default function ScamCallsTargetingSeniorsPage() {

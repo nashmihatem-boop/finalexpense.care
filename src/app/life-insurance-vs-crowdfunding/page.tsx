@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Life Insurance vs. Crowdfunding a Funeral",
   description:
     "Online fundraisers depend on your network's generosity and timing. Here's how that compares to a life insurance policy's guaranteed payout.",
+  openGraph: { title: "Life Insurance vs. Crowdfunding a Funeral", description: "Online fundraisers depend on your network's generosity and timing. Here's how that compares to a life insurance policy's guaranteed payout." },
+
+  twitter: { title: "Life Insurance vs. Crowdfunding a Funeral", description: "Online fundraisers depend on your network's generosity and timing. Here's how that compares to a life insurance policy's guaranteed payout." },
 };
 
 export default function LifeInsuranceVsCrowdfundingPage() {

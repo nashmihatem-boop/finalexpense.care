@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance in Your 50s",
   description:
     "Why your 50s are often the easiest decade to qualify for final expense insurance, and how locking in a rate now compares with waiting.",
+  openGraph: { title: "Final Expense Insurance in Your 50s", description: "Why your 50s are often the easiest decade to qualify for final expense insurance, and how locking in a rate now compares with waiting." },
+
+  twitter: { title: "Final Expense Insurance in Your 50s", description: "Why your 50s are often the easiest decade to qualify for final expense insurance, and how locking in a rate now compares with waiting." },
 };
 
 export default function FinalExpenseInsuranceInYour50sPage() {
@@ -22,7 +25,7 @@ export default function FinalExpenseInsuranceInYour50sPage() {
         <div className="relative mt-8 aspect-[16/7] overflow-hidden rounded-2xl">
           <Image
             src="/photos/senior-gardening.jpg"
-            alt=""
+            alt="A woman in her 50s gardening outdoors"
             fill
             sizes="(min-width: 640px) 768px, 100vw"
             className="object-cover"

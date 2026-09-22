@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Choose a Final Expense Insurance Company",
   description:
     "A practical, carrier-neutral checklist for evaluating any final expense insurance provider — licensing, track record, claims handling, and reading the actual policy before you buy.",
+  openGraph: { title: "How to Choose a Final Expense Insurance Company", description: "A practical, carrier-neutral checklist for evaluating any final expense insurance provider — licensing, track record, claims handling, and reading the actual policy before you buy." },
+
+  twitter: { title: "How to Choose a Final Expense Insurance Company", description: "A practical, carrier-neutral checklist for evaluating any final expense insurance provider — licensing, track record, claims handling, and reading the actual policy before you buy." },
 };
 
 export default function HowToChooseACompanyPage() {

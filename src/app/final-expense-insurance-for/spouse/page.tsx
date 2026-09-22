@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Final Expense Insurance for a Spouse",
   description:
     "Why couples often buy final expense coverage for each other, who should apply, how beneficiaries typically work, and how to get started.",
+  openGraph: { title: "Final Expense Insurance for a Spouse", description: "Why couples often buy final expense coverage for each other, who should apply, how beneficiaries typically work, and how to get started." },
+
+  twitter: { title: "Final Expense Insurance for a Spouse", description: "Why couples often buy final expense coverage for each other, who should apply, how beneficiaries typically work, and how to get started." },
 };
 
 export default function SpousePage() {
