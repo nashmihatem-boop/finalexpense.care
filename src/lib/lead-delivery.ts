@@ -10,27 +10,36 @@ export type DeliveryResult =
   | { ok: true; leadId: string; deliveredToBuyers: boolean }
   | { ok: false; error: string };
 
+// Vercel's deployed functions run on a read-only filesystem outside of /tmp, so storeLocally()
+// can never succeed there — only in local dev. process.env.VERCEL is set automatically on every
+// Vercel deployment (Preview and Production alike), so this is a reliable way to tell them apart.
+const IS_VERCEL = !!process.env.VERCEL;
+
 /**
- * Everything that happens to a lead after the quiz form validates it. Kept in this order
- * on purpose:
+ * Everything that happens to a lead after the quiz form validates it.
  *
- *  1. Durably store it ourselves first. This is the only step that must never silently no-op —
- *     if it fails, the visitor sees an error instead of a false "thanks!" for a lead that went
- *     nowhere.
- *  2. Notify a human by email. Best-effort — a missing RESEND_API_KEY skips it (logged, not
- *     thrown) rather than failing the submission.
- *  3. Hand it to whichever buyer channel(s) are configured. Each channel is independent and
- *     best-effort: a channel that isn't configured yet is skipped (logged, not thrown), so the
- *     site is fully usable before LeadProsper/Ringba campaigns exist. Once a campaign is live,
- *     set its env vars and postToLeadProsper below starts actually delivering — no other code
- *     here needs to change.
+ *  - Locally: storeLocally() is the durable record, and the step that must never silently
+ *    no-op — if it fails, the visitor sees an error instead of a false "thanks!" for a lead
+ *    that went nowhere.
+ *  - In production (Vercel): storeLocally() is skipped entirely (see IS_VERCEL above), so the
+ *    email notification becomes the only record of the lead, which makes IT the step that must
+ *    not silently fail. TODO before this matters at scale: add a real datastore (Postgres/
+ *    Supabase/Vercel KV) so production doesn't depend on email as its system of record — a
+ *    Resend outage would otherwise mean a genuinely lost lead with nothing to recover from.
+ *
+ *  LeadProsper stays best-effort either way: a channel that isn't configured yet is skipped
+ *  (logged, not thrown), so the site is fully usable before that campaign exists. Once it's
+ *  live, set its env vars and postToLeadProsper below starts actually delivering — no other
+ *  code here needs to change.
  */
 export async function deliverLead(record: LeadRecord): Promise<DeliveryResult> {
-  try {
-    await storeLocally(record);
-  } catch (err) {
-    console.error("[lead-delivery] local store failed — lead was NOT captured", err);
-    return { ok: false, error: "We couldn't save your information. Please call us instead." };
+  if (!IS_VERCEL) {
+    try {
+      await storeLocally(record);
+    } catch (err) {
+      console.error("[lead-delivery] local store failed — lead was NOT captured", err);
+      return { ok: false, error: "We couldn't save your information. Please call us instead." };
+    }
   }
 
   const emailResult = await sendLeadNotificationEmail(record);
@@ -39,14 +48,20 @@ export async function deliverLead(record: LeadRecord): Promise<DeliveryResult> {
       `[lead-delivery] RESEND_API_KEY not set — lead ${record.id} was NOT emailed to ` +
         `${siteConfig.leadNotificationEmail}. Set RESEND_API_KEY (from resend.com) to enable it.`
     );
+    if (IS_VERCEL) {
+      return { ok: false, error: "We couldn't save your information. Please call us instead." };
+    }
   } else if (!emailResult.ok) {
     console.error(`[lead-delivery] Lead notification email failed for lead ${record.id}`, emailResult.error);
+    if (IS_VERCEL) {
+      return { ok: false, error: "We couldn't save your information. Please call us instead." };
+    }
   }
 
   const buyerResult = await postToLeadProsper(record);
   if (!buyerResult.attempted) {
     console.warn(
-      `[lead-delivery] LeadProsper not configured — lead ${record.id} stored locally only. ` +
+      `[lead-delivery] LeadProsper not configured — lead ${record.id} ${IS_VERCEL ? "emailed only, not stored" : "stored locally only"}. ` +
         "Set LEADPROSPER_CAMPAIGN_POST_URL and LEADPROSPER_SUPPLIER_KEY once the Final Expense " +
         "supplier campaign exists in LeadProsper."
     );
