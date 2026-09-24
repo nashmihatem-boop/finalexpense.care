@@ -58,7 +58,11 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="rounded-2xl border border-mist bg-canvas-raised p-6 shadow-[0_12px_32px_rgba(20,43,86,0.12)] sm:p-8">
+          {/* max-h + overflow-y-auto on purpose: later widget steps (longer questions, the
+              final "Thank you" screen) render far more content than the first zip/state step —
+              without a cap the card grows with whichever step is active and the hero jumps
+              around. Capping it keeps the hero's height steady; a tall step scrolls internally. */}
+          <div className="max-h-[560px] overflow-y-auto rounded-2xl border border-mist bg-canvas-raised p-6 shadow-[0_12px_32px_rgba(20,43,86,0.12)] sm:p-8">
             <div id="leadforms-embd-form" />
           </div>
         </div>
