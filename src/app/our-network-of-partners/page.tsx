@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal-page";
 import { siteConfig } from "@/lib/site-config";
+import { NETWORK_PARTNERS } from "@/lib/network-partners";
 
 export const metadata: Metadata = {
   title: "Our Network of Partners",
@@ -22,11 +23,13 @@ export default function OurNetworkOfPartnersPage() {
       </p>
 
       <h2>Partners</h2>
-      <p>
-        We&apos;re finalizing this list with our current insurance partners. In the meantime,
-        contact us at {siteConfig.legalEmail} for details on who currently receives requests
-        submitted through this Site.
-      </p>
+      <div className="columns-2 gap-x-6 text-sm leading-relaxed text-charcoal/75 sm:columns-3">
+        {NETWORK_PARTNERS.map((name) => (
+          <p key={name} className="break-inside-avoid py-0.5">
+            {name}
+          </p>
+        ))}
+      </div>
 
       <p>
         This list may change from time to time. For details on how your information is used and
