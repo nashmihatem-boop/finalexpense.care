@@ -15,11 +15,9 @@ export const siteConfig = {
   // number and calls to it won't show up in Ringba/the CRM.
   supportPhoneDisplay: "(302) 407-0876",
   supportPhoneHref: "tel:+13024070876",
-  supportEmail: "TODO@finalexpense.care",
-  // Used specifically on legal/compliance pages (Terms, Privacy, TCPA Consent, Do Not Call,
-  // Disclaimer) — kept separate from supportEmail since it's a dedicated legal-correspondence
-  // inbox, not general customer support.
-  legalEmail: "legal@assigners.com",
+  // One contact address, info@<domain>, used everywhere — general contact and legal pages alike.
+  supportEmail: "info@finalexpense.care",
+  legalEmail: "info@finalexpense.care",
   // Where new-lead notification emails go (see sendLeadNotificationEmail in lead-delivery.ts).
   // Interim inbox — swap this one line when the real destination is ready.
   leadNotificationEmail: "kobi@assigners.com",
