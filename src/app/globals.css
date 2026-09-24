@@ -88,3 +88,11 @@ body {
   outline-offset: 2px;
   border-radius: 2px;
 }
+
+/* LeadForms (useleadbot.com) quote widget on /get-quote renders its field-validation checkmark
+   as a baked-in green PNG, not a CSS color, so it can't be recolored directly. This filter chain
+   was tuned against the actual icon's pixels to reproduce --color-brass (#f0b429) almost exactly
+   (measured output vs. target differed by ~2% per channel). */
+.leadforms-field-status-icon-img {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(90%) saturate(400%) hue-rotate(-10deg) brightness(0.95);
+}
