@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
-import { GetQuotePrefill } from "@/components/get-quote-prefill";
 
 export const metadata: Metadata = {
   title: "Get Your Free Quote",
@@ -18,9 +16,6 @@ export default function GetQuotePage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
       <div id="leadforms-embd-form" />
-      <Suspense fallback={null}>
-        <GetQuotePrefill />
-      </Suspense>
     </div>
   );
 }

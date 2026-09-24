@@ -37,12 +37,16 @@ export function SiteFooter() {
     <footer className="bg-harbor text-canvas/80">
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8 sm:flex-row sm:items-center sm:justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
+          {/* Plain <a>, not <Link>: the homepage hero embeds the LeadForms widget, which only
+              reliably initializes on a real page load — client-side nav here leaves it blank
+              (same issue as /get-quote, see button.tsx). */}
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/" className="flex items-center gap-2.5">
             <HorizonMark className="h-8 w-8 text-canvas [&_.text-harbor]:text-canvas [&_.text-mist]:text-canvas/40" />
             <span className="font-display text-lg font-extrabold text-canvas">
               FinalExpense.care
             </span>
-          </Link>
+          </a>
           <p className="text-sm text-canvas/60">
             Looking for a quote?{" "}
             <a href={siteConfig.supportPhoneHref} className="font-bold text-brass hover:underline">
@@ -55,13 +59,22 @@ export function SiteFooter() {
           <div>
             <p className="text-sm font-bold text-canvas">About FinalExpense.care</p>
             <ul className="mt-4 space-y-2.5 text-sm">
-              {ABOUT_LINKS.map((l) => (
-                <li key={l.label}>
-                  <Link href={l.href} className="hover:text-canvas">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
+              {ABOUT_LINKS.map((l) =>
+                l.href === "/" ? (
+                  // Plain <a>: same widget-blank-on-client-nav issue as the logo link above.
+                  <li key={l.label}>
+                    <a href={l.href} className="hover:text-canvas">
+                      {l.label}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={l.label}>
+                    <Link href={l.href} className="hover:text-canvas">
+                      {l.label}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
           <div>

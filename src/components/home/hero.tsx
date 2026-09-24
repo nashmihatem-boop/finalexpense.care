@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { HorizonDivider } from "@/components/horizon-divider";
-import { HeroQuickForm } from "@/components/home/hero-quick-form";
 import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
@@ -19,7 +18,7 @@ export function Hero() {
           the right where the photo can show through more (the form card there is opaque anyway). */}
       <div className="absolute inset-0 bg-gradient-to-r from-harbor-deep via-harbor/92 to-harbor/55" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-20 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-24 sm:px-8 sm:pt-20 sm:pb-32 lg:grid-cols-[0.95fr_1.15fr] lg:items-center">
         <div className="animate-fade-up">
           <p className="font-sans text-sm font-semibold tracking-[0.14em] text-brass uppercase">
             Final Expense Insurance
@@ -59,7 +58,9 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <HeroQuickForm />
+          <div className="rounded-2xl border border-mist bg-canvas-raised p-6 shadow-[0_12px_32px_rgba(20,43,86,0.12)] sm:p-8">
+            <div id="leadforms-embd-form" />
+          </div>
         </div>
       </div>
 

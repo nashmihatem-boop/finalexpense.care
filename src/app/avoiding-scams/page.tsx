@@ -55,7 +55,8 @@ export default function AvoidingScamsPage() {
     <div className="bg-canvas">
       <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
         <p className="text-sm text-charcoal/50">
-          <Link href="/" className="hover:text-harbor">Home</Link> / Avoiding Scams
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- widget on / needs a real page load, see button.tsx */}
+          <a href="/" className="hover:text-harbor">Home</a> / Avoiding Scams
         </p>
         <h1 className="mt-3 font-display text-3xl font-extrabold text-harbor sm:text-4xl">
           Avoiding final expense insurance scams
@@ -117,9 +118,10 @@ export default function AvoidingScamsPage() {
             See what you qualify for
           </Button>
           <p className="mt-4 text-sm text-charcoal/60">
-            <Link href="/" className="font-semibold text-harbor-mid hover:underline">
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- widget on / needs a real page load, see button.tsx */}
+            <a href="/" className="font-semibold text-harbor-mid hover:underline">
               ← Back to Home
-            </Link>
+            </a>
           </p>
         </div>
       </div>

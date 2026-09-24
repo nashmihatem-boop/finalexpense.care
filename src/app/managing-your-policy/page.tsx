@@ -76,7 +76,8 @@ export default function ManagingYourPolicyPage() {
     <div className="bg-canvas">
       <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
         <p className="text-sm text-charcoal/50">
-          <Link href="/" className="hover:text-harbor">Home</Link> / Managing Your Policy
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- widget on / needs a real page load, see button.tsx */}
+          <a href="/" className="hover:text-harbor">Home</a> / Managing Your Policy
         </p>
         <h1 className="mt-3 font-display text-3xl font-extrabold text-harbor sm:text-4xl">
           Managing a policy you already have
