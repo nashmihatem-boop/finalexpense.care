@@ -60,10 +60,25 @@ export function GetQuotePrefill() {
       }
     }
 
-    tryFill();
-    const observer = new MutationObserver(tryFill);
+    // Debounced on purpose: the widget does a lot of its own rapid DOM churn while it
+    // initializes (WebSocket-driven updates, its own re-renders), and calling tryFill on every
+    // single mutation synchronously was firing dozens of times a second during that window —
+    // confirmed live to actually break the widget's own init (it rendered blank whenever the
+    // page loaded with zip/firstName/lastName params present, worked fine without them).
+    // Waiting for a brief quiet period before touching the DOM avoids racing that init entirely.
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    function scheduleFill() {
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = setTimeout(tryFill, 200);
+    }
+
+    scheduleFill();
+    const observer = new MutationObserver(scheduleFill);
     observer.observe(container, { childList: true, subtree: true });
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, [zip, firstName, lastName, state]);
 
   return null;
