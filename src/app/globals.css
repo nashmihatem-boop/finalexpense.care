@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Palette matched to healthadvantageplan.com (Quality Score LLC's other site) for a
+/* Palette matched to healthadvantageplan.com (a sibling site, same operator) for a
    consistent house style across properties — values sampled directly from its computed
    styles, not eyeballed. */
 :root {

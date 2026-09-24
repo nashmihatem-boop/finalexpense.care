@@ -4,8 +4,9 @@
 
 export const siteConfig = {
   name: "FinalExpense.care",
-  // Same entity as healthadvantageplan.com, per confirmation — sibling site, same operator.
-  legalEntity: "Quality Score LLC",
+  // The disclosed name on every legal page, footer, and schema.org entry — deliberately the
+  // branded domain name itself, not a separate LLC name.
+  legalEntity: "FinalExpense.Care",
   domain: "finalexpense.care",
   // Every call CTA on the site (header, hero, thank-you page) reads this pair, so once the
   // "Insurance - Final Expense - IN/WT" Ringba campaign exists, dropping its Dynamic Number
