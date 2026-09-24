@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { TextField } from "@/components/ui/text-field";
 import { Button } from "@/components/ui/button";
 
@@ -12,7 +11,6 @@ import { Button } from "@/components/ui/button";
  * questions here — this is step zero of one flow, not a second, competing form.
  */
 export function HeroQuickForm() {
-  const router = useRouter();
   const [zip, setZip] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -23,7 +21,10 @@ export function HeroQuickForm() {
     e.preventDefault();
     if (!valid) return;
     const params = new URLSearchParams({ zip, firstName: firstName.trim(), lastName: lastName.trim() });
-    router.push(`/get-quote?${params.toString()}`);
+    // A hard navigation, not router.push: the /get-quote widget only reliably initializes
+    // on a real page load (see button.tsx for the full explanation of the same issue).
+    // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+    window.location.href = `/get-quote?${params.toString()}`;
   }
 
   return (

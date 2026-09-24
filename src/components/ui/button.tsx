@@ -57,7 +57,12 @@ export function Button(props: LinkButtonProps | NativeButtonProps) {
   }
 
   const { href, external } = props;
-  if (external || href.startsWith("tel:") || href.startsWith("mailto:")) {
+  // /get-quote embeds a third-party widget (useleadbot.com) that only reliably
+  // initializes on a real page load — its own client-side-navigation re-init hangs and
+  // leaves the form blank (confirmed live: Link/router.push there never renders the
+  // widget, a full navigation always does). Force a hard navigation for it specifically;
+  // every other internal link is unaffected and keeps normal client-side routing.
+  if (external || href.startsWith("tel:") || href.startsWith("mailto:") || href === "/get-quote" || href.startsWith("/get-quote?")) {
     return (
       <a href={href} className={classes}>
         {children}

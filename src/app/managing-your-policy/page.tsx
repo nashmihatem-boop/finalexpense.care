@@ -116,9 +116,9 @@ export default function ManagingYourPolicyPage() {
           </Button>
           <p className="mt-4 text-sm text-charcoal/60">
             Don&apos;t have a policy yet?{" "}
-            <Link href="/get-quote" className="font-semibold text-harbor-mid hover:underline">
+            <a href="/get-quote" className="font-semibold text-harbor-mid hover:underline">
               See what you qualify for →
-            </Link>
+            </a>
           </p>
         </div>
       </div>
