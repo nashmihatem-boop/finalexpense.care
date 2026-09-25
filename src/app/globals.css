@@ -96,3 +96,22 @@ body {
 .leadforms-field-status-icon-img {
   filter: brightness(0) saturate(100%) invert(70%) sepia(90%) saturate(400%) hue-rotate(-10deg) brightness(0.95);
 }
+
+/* Same widget: every <select> (State, Month, Day, ...) shares this class and renders with
+   appearance:auto, so the browser's native arrow sits flush against the right edge with no
+   controllable spacing. Swapping in a custom arrow is the only reliable cross-browser way to
+   give it breathing room from the border. The widget's own CSS-in-JS (styled-components,
+   hashed class names) sets background-image/padding-right with !important on an
+   equally-specific class and injects after this stylesheet, so a plain .leadforms-select
+   override — even with !important of its own — still loses the tie on source order. Scoping
+   through the #leadforms-embd-form container id outranks it on specificity instead, which
+   !important vs. !important falls back to when specificity differs. */
+#leadforms-embd-form select.leadforms-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6L8 10L12 6' stroke='%236D6E7A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 14px center !important;
+  background-size: 12px !important;
+  padding-right: 36px !important;
+}
